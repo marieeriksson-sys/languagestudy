@@ -1,0 +1,95 @@
+body {
+background-image: linear-gradient(to bottom right, rgb(146, 203, 245), white);
+}
+.hemsidarubrik{
+  font-family: "Updock", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+ text-align: center;
+ margin: 0;
+ padding:0;
+}
+.välj{
+  padding:10px;
+  display:flex;
+  justify-content: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.information{
+color: rgb(0, 0, 0);
+padding:5px;
+text-align: center;
+margin-bottom: 40px;
+opacity: 0,8;
+width: 400px;
+}
+.topnav{
+justify-content: center;
+align-items: center;
+max-width: 600px;
+width:80%;
+margin-bottom: 40px;
+margin:20px auto;
+padding:15px 20px;
+position:relative;
+overflow: hidden;
+display: flex;
+background-color: rgb(252, 252, 252);
+border-radius: 50px;
+box-shadow:0 0 20px rgb(63, 114, 150);
+}
+
+.topnav li a{
+display:block;
+padding:10px 20px;
+display: inline-block;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color:rgb(0, 0, 0);
+text-align: center;
+text-decoration: none;
+transition: all 0.3s ease-in-out;
+}
+.topnav li {
+list-style: none;
+margin: 0;
+padding: 0;
+float:left;
+}
+
+.topnav a:hover{
+  padding:10px;
+  border-radius: 10px;
+  overflow:hidden;
+}
+.Spanska-länk:hover{
+  backdrop-filter: blur(5px);
+  background-color: rgb(238, 217, 122);
+}
+.Japanska-länk:hover{
+backdrop-filter: blur(5px);
+background-color: rgb(244, 79, 79);
+}
+.Franska-länk:hover{
+  backdrop-filter: blur(5px);
+  background-color: rgb(122, 228, 238);
+}
+.Engelska-länk:hover{
+  backdrop-filter: blur(5px);
+  background-color: rgb(126, 238, 122);
+}
+.bilder{
+display: flex;
+justify-content: center;
+gap:40px;
+width:100%;
+padding: 20px;
+}
+.image1, .image2, .image3, .image4{
+ width:20%;
+ max-width:230px;
+ height:320px;
+ object-fit: cover;
+ border-radius: 150px 150px 0 0;
+  }

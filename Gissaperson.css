@@ -1,0 +1,38 @@
+body {
+justify-content: center;
+display: flex;
+align-items: center;
+}
+.Gladkvinna{
+margin-top: 50px;
+border-radius: 30px;
+}
+button.option{
+display: block;
+margin: 10px auto;
+padding: 10px 20px;
+font-size: 15px;
+cursor: pointer;
+border-radius: 5px;
+background: transparent;
+backdrop-filter: blur(20px);
+border:1px solid gray;
+}
+.game {
+background: rgb(213, 213, 213);
+backdrop-filter: blur(7px);
+padding:20px 30px;
+padding:40px;
+border-radius: 10px;
+text-align: center;
+box-shadow: 0 0 10px rgba(238, 237, 237, 0.1);
+}
+button.option:hover {
+    background: rgb(192, 251, 255);
+}
+#result {
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 20px;
+    
+}
