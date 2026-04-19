@@ -1,4 +1,7 @@
 body {
+  margin: 0;
+  padding:0;
+  overflow-x:hidden;
 background-image: linear-gradient(to bottom right, rgb(146, 203, 245), white);
 }
 .hemsidarubrik{
@@ -93,11 +96,22 @@ padding: 20px;
  object-fit: cover;
  border-radius: 150px 150px 0 0;
   }
+  @keyframes slidedown {
+   0%{
+    transform: translateY(-100%);
+    opacity:0;
+   }
+   100% {
+    transform: translateY(0);
+    opacity:1;
+   }
+  }
   .startbild1{
     width: 100%;
-    height: 100%;
+    height: auto;
     margin: 0;
     padding:0;
     box-shadow: 0 4px 15px rgba(0, 120, 255, 0.2);
     display: block;
+    animation: slidedown 1s ease-out forwards;
     }
