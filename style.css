@@ -68,7 +68,7 @@ text-decoration: none;
 padding:10px 20px;
 }
 .nav-icon{
-  width: 35px;
+  width: 35px !important;
   height:20px;
   display:inline-block;
   vertical-align: middle;
