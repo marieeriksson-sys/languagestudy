@@ -102,13 +102,6 @@ gap:40px;
 width:100%;
 padding: 20px;
 }
-.image1, .image2, .image3, .image4{
- width:20%;
- max-width:230px;
- height:320px;
- object-fit: cover;
- border-radius: 150px 150px 0 0;
-  }
   @keyframes slidedown {
    0% {
     transform: translateY(-100%);
