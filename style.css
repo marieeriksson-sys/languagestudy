@@ -60,6 +60,12 @@ margin: 0;
 padding: 0;
 float:left;
 }
+.topnav a{
+display:inline-flex;
+align-items: center;
+gap:8px;
+padding:10px 20px;
+}
 
 .topnav a:hover{
   padding:10px;
@@ -117,6 +123,8 @@ padding: 20px;
     display: block;
     animation: slidedown 2s ease-out forwards;
     }
-    .japan-icon{
+    .nav-icon{
     width: 20px;
+    height:auto;
+    display:block;
     }
