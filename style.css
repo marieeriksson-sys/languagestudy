@@ -22,7 +22,7 @@ background-image: linear-gradient(to bottom right, rgb(146, 203, 245), white);
 }
 .information{
 color: rgb(0, 0, 0);
-border-radius: 20px;
+border-radius: 20px 25px;
 text-align: center;
 padding-top: 20px;
 margin: 50px auto 40px auto;
