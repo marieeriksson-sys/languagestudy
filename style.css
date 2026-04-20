@@ -25,11 +25,11 @@ color: rgb(0, 0, 0);
 border-radius: 20px;
 text-align: center;
 padding-top: 20px;
-margin: auto;
+margin: 0 auto 40px auto;
 background-color: aliceblue;
 margin-bottom: 40px;
 opacity: 0,8;
-width: 400px;
+width: 200px;
 }
 .topnav{
 justify-content: center;
