@@ -126,5 +126,7 @@ padding: 20px;
     .nav-icon{
     width: 20px;
     height:auto;
-    display:block;
+    display:inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
     }
