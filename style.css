@@ -68,8 +68,8 @@ text-decoration: none;
 padding:10px 20px;
 }
 .nav-icon{
-  width: 35px !important;
-  height:20px !important;
+  width: 35px;
+  height:auto;
   display:inline-block;
   vertical-align: middle;
   margin-left: 8px;
