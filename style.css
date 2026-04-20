@@ -69,7 +69,7 @@ padding:10px 20px;
 }
 .nav-icon{
   width: 35px !important;
-  height:20px;
+  height:20px !important;
   display:inline-block;
   vertical-align: middle;
   margin-left: 8px;
