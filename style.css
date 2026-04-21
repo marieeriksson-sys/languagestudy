@@ -16,7 +16,7 @@ background-image: linear-gradient(to bottom right, rgb(146, 203, 245), white);
 .välj{
   padding:10px;
   text-align: center;
-  font-weight: 600;
+  font-weight: 400;
   display:flex;
   justify-content: center;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
