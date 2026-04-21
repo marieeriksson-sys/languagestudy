@@ -5,7 +5,9 @@ body {
 background-image: linear-gradient(to bottom right, rgb(146, 203, 245), white);
 }
 .game{
-width:20px;
+width:200px;
+align-items: center;
+height:auto;
 }
 .välj{
   padding:10px;
