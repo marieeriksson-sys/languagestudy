@@ -8,6 +8,7 @@ background-image: linear-gradient(to bottom right, rgb(146, 203, 245), white);
 width:200px;
 align-items: center;
 height:auto;
+display: flex;
 }
 .välj{
   padding:10px;
