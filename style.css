@@ -4,12 +4,6 @@ body {
   overflow-x:hidden;
 background-image: linear-gradient(to bottom right, rgb(146, 203, 245), white);
 }
-.game{
-width:200px;
-align-items: center;
-height:auto;
-display: flex;
-}
 .välj{
   padding:10px;
   text-align: center;
@@ -20,15 +14,17 @@ display: flex;
 
 }
 .information{
+font-family:Verdana, Geneva, Tahoma, sans-serif;
 color: rgb(0, 0, 0);
-border-radius: 20px 25px;
+background-color:  rgb(155, 204, 239);
+width: 90%;
+max-width: 500px;
+border-radius: 24px;
 text-align: center;
-padding-top: 20px;
-margin: 50px auto 40px auto;
-background-color: rgb(255, 255, 255);
+padding:30px;
+margin: 60px auto 20px auto;
 margin-bottom: 40px;
-opacity: 0.8;
-width: 500px;
+line-height: 1.6;
 box-shadow:0 0 20px rgb(63, 114, 150);
 display: flex;
 }
