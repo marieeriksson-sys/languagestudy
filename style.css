@@ -4,14 +4,8 @@ body {
   overflow-x:hidden;
 background-image: linear-gradient(to bottom right, rgb(146, 203, 245), white);
 }
-.hemsidarubrik{
-  font-family: "Updock", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 80px;
- text-align: center;
- margin: 0;
- padding:0;
+.game{
+width:20px;
 }
 .välj{
   padding:10px;
