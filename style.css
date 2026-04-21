@@ -15,7 +15,9 @@ background-image: linear-gradient(to bottom right, rgb(146, 203, 245), white);
 }
 .information{
 font-family:Verdana, Geneva, Tahoma, sans-serif;
+backdrop-filter: blur(10px);
 color: rgb(0, 0, 0);
+background: rgba(255, 255, 255, 0.4);
 background-color:  rgb(155, 204, 239);
 width: 90%;
 max-width: 500px;
