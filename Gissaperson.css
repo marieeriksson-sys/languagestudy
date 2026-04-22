@@ -9,14 +9,40 @@ background-color: rgb(95, 2, 2);
 background-size:cover;
 background-position: center;
 }
+.Tillbaka{
+    background: transparent;
+    backdrop-filter: blur(7px);
+    border:1px solid gray;
+    text-decoration: none;
+    top:0;
+    left:0;
+    margin:0;
+    position: fixed;
+    width:20%;
+    padding: 20px;
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    border-radius: 5px;
+    color: aliceblue;
+    }
 .Gladkvinna{
-margin-top: 50px;
+margin:15px;
+max-width: 500px;
+width: 100%;
 border-radius: 30px;
 }
+.options{
+display:grid;
+grid-template-columns: 1fr 1fr;
+gap:15px;
+margin-top:15px;
+}
 button.option{
+width: 100%;
+margin:0;
 display: block;
-margin: 10px auto;
-padding: 10px 20px;
+padding: 15px 20px;
 font-size: 15px;
 cursor: pointer;
 border-radius: 5px;
@@ -25,18 +51,24 @@ backdrop-filter: blur(20px);
 border:2px solid rgb(0, 0, 0);
 }
 .game {
-background: rgb(213, 213, 213);
+background: rgb(255, 255, 255);
 backdrop-filter: blur(7px);
-padding:40px;
-border-radius: 10px;
+padding:20px;
+padding-bottom: 0;
+border-radius: 15px;
 text-align: center;
 box-shadow: 0 0 10px rgba(238, 237, 237, 0.1);
+}
+.fuji{
+width: 100px;
+margin:10px;
+justify-content:right;
 }
 button.option:hover {
     background: rgb(192, 251, 255);
 }
 #result {
-    font-weight: bold;
-    font-size: 24px;
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 20px;  
 }
