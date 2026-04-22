@@ -1,7 +1,13 @@
 body {
+margin:0;
+min-height: 100vh;
 justify-content: center;
 display: flex;
 align-items: center;
+background-image:url(wp9396924.jpg);
+background-color: rgb(95, 2, 2);
+background-size:cover;
+background-position: center;
 }
 .Gladkvinna{
 margin-top: 50px;
@@ -16,12 +22,11 @@ cursor: pointer;
 border-radius: 5px;
 background: transparent;
 backdrop-filter: blur(20px);
-border:1px solid gray;
+border:2px solid rgb(0, 0, 0);
 }
 .game {
 background: rgb(213, 213, 213);
 backdrop-filter: blur(7px);
-padding:20px 30px;
 padding:40px;
 border-radius: 10px;
 text-align: center;
