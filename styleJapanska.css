@@ -41,33 +41,49 @@ overflow:hidden;
 background-color: rgb(95, 2, 2);
 }
 .Hem{
-background: transparent;
-backdrop-filter: blur(7px);
-border:1px solid gray;
+    background: transparent;
+    backdrop-filter: blur(7px);
+    border:1px solid gray;
+    text-decoration: none;
+    top:0;
+    left:0;
+    position: fixed;
+    margin:0;
+    padding:15px;
+    position: fixed;
+    width: fit-content;
+    display: block;
+    overflow: hidden;
+    border-radius: 5px;
+    }
+.Hem ul {
+margin: 0;
+padding: 0;
+display: flex;
+gap: 10px;
+}
+.Hem li{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+.Hem a{
+color:aliceblue;
+display:flex;
+align-items: center;
+gap: 8px;
+padding: 10px 15px;
 text-decoration: none;
-top:0;
-left:0;
-margin:0;
-position: fixed;
-width:30%;
-padding: 20px;
-display: block;
-overflow: hidden;
-text-align: left;
-border-radius: 5px;
-color: aliceblue;
+transition: all 0.3s ease-in-out;
 }
 .Hem a:hover{
-    padding:10px;
+    padding: 10px;
     border-radius: 10px;
-    overflow:hidden;
     background-color: rgb(95, 2, 2);
   }
 .Hemicon{
     width: 20px;
     height:auto;
-    display:inline-block;
-    vertical-align: middle;
     }
 .information
 {
