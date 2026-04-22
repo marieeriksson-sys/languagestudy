@@ -24,8 +24,23 @@ background-position: center;
     overflow: hidden;
     text-align: left;
     border-radius: 5px;
-    color: aliceblue;
     }
+.Tillbaka a{
+color:aliceblue;
+text-decoration: none;
+}
+.Tillbaka a:hover{
+    padding:10px;
+    border-radius: 10px;
+    overflow:hidden;
+    background-color: rgb(95, 2, 2);
+  }
+.Hemicon{
+  width: 20px;
+  height:auto;
+  display:inline-block;
+  vertical-align: middle;
+  }
 .Gladkvinna{
 margin:15px;
 max-width: 500px;

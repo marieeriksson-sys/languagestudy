@@ -57,9 +57,18 @@ text-align: left;
 border-radius: 5px;
 color: aliceblue;
 }
-.Hem:hover{
-background-color:  rgb(95, 2, 2);
-}
+.Hem a:hover{
+    padding:10px;
+    border-radius: 10px;
+    overflow:hidden;
+    background-color: rgb(95, 2, 2);
+  }
+.Hemicon{
+    width: 20px;
+    height:auto;
+    display:inline-block;
+    vertical-align: middle;
+    }
 .information
 {
     background: transparent;
