@@ -40,34 +40,33 @@ border-radius: 10px;
 overflow:hidden;
 background-color: rgb(95, 2, 2);
 }
-.Hem{
+.Hemnav{
     background: transparent;
     backdrop-filter: blur(7px);
     border:1px solid gray;
-    text-decoration: none;
     top:0;
     left:0;
     position: fixed;
     margin:0;
     padding:15px;
     position: fixed;
-    width: fit-content;
+    width: 200px;
     display: block;
     overflow: hidden;
     border-radius: 5px;
     }
-.Hem ul {
+.Hemnav ul {
 margin: 0;
 padding: 0;
 display: flex;
-gap: 10px;
+gap: 5px;
 }
-.Hem li{
+.Hemnav li{
 list-style: none;
 margin: 0;
 padding: 0;
 }
-.Hem a{
+.Hemnav a{
 color:aliceblue;
 display:flex;
 align-items: center;
@@ -75,13 +74,16 @@ gap: 8px;
 padding: 10px 15px;
 text-decoration: none;
 transition: all 0.3s ease-in-out;
+width: fit-content;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.Hem a:hover{
+.Hemnav a:hover{
     padding: 10px;
     border-radius: 10px;
+    overflow: hidden;
     background-color: rgb(95, 2, 2);
   }
-.Hemicon{
+.nav-icon{
     width: 20px;
     height:auto;
     }

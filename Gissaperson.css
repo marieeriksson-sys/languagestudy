@@ -12,34 +12,55 @@ background-position: center;
 .Tillbaka{
     background: transparent;
     backdrop-filter: blur(7px);
-    border:1px solid gray;
-    text-decoration: none;
+    border-right:1px solid gray;
+    border-bottom: 1px solid gray;
     top:0;
     left:0;
     margin:0;
     position: fixed;
-    width:20%;
-    padding: 20px;
+    width:120px;
+    height: 50vh;
+    padding: 20px 10px;
     display: block;
     overflow: hidden;
     text-align: left;
+    box-sizing: border-box;
     border-radius: 5px;
     }
+.Tillbaka ul {
+ margin: 0;
+padding: 0;
+flex-direction: column;
+gap: 5px;
+display: flex;
+}
+.Tillbaka li{
+list-style: none;
+margin: 0;
+padding: 0;
+width: 100%;
+}
 .Tillbaka a{
 color:aliceblue;
+display: flex;
+align-items: center;
+gap: 5px;
+padding:10px 15px;
 text-decoration: none;
+transition: all 0.3s ease-in-out;
+width: 100%;
+box-sizing: border-box;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .Tillbaka a:hover{
-    padding:10px;
     border-radius: 10px;
-    overflow:hidden;
+    padding: 10px;
     background-color: rgb(95, 2, 2);
   }
-.Hemicon{
+.nav-icon{
   width: 20px;
   height:auto;
   display:inline-block;
-  vertical-align: middle;
   }
 .Gladkvinna{
 margin:15px;
