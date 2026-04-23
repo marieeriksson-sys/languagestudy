@@ -1,7 +1,9 @@
 <?php
 $conn = new mysqli("localhost", "Marie", "4653Zs7U", "databas");
-if ($_SERVER["REQUEST_METHOD"] == "POST")
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
  $sql = "INSERT INTO formdata (title, description) VALUES (test, beskrivning)";
+  }
+
 ?>
 
 
