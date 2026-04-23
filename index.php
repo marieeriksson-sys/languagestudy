@@ -1,15 +1,14 @@
 <?php
-phpinfo();
-// ini_set('display_errors', 1);
-// ini_set('display_startup_errors', 1);
-// error_reporting(E_ALL);
-// $conn = new mysqli("localhost" , "Marie" , "4653Zs7U" , "databas" );
-// if ($_SERVER["REQUEST_METHOD"] == "POST") {
-// $titel = $POST["titel"];
-// $beskrivning = $POST["beskrivning"];
-//  $sql = "INSERT INTO tabell (title, description) VALUES ($title, $beskrivning)";
-//  $conn->query($sql);
-//   }
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+$conn = new mysqli("localhost" , "Marie" , "4653Zs7U" , "databas" );
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+$titel = $POST["titel"];
+$beskrivning = $POST["beskrivning"];
+ $sql = "INSERT INTO tabell (title, description) VALUES ($title, $beskrivning)";
+ $conn->query($sql);
+  }
 
 ?>
 
