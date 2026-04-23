@@ -6,7 +6,7 @@ $conn = new mysqli("localhost" , "Marie" , "4653Zs7U" , "databas" );
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $titel = $POST["titel"];
 $beskrivning = $POST["beskrivning"];
- $sql = "INSERT INTO tabell (title, description) VALUES ($title, $beskrivning)";
+ $sql = "INSERT INTO tabell (title, description) VALUES ('$title', '$beskrivning')";
  $conn->query($sql);
   }
 
