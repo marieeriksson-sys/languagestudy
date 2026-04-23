@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli("localhost", "Marie", "4653Zs7U", "databas");
+$conn = new mysqli("localhost" , "Marie" , "4653Zs7U" , "databas" );
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $titel = $POST["titel"];
 $beskrivning = $POST["beskrivning"];
