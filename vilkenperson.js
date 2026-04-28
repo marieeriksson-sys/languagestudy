@@ -53,17 +53,20 @@ currentQuestion.options.forEach(option => {
 
    button.addEventListener('click', () => {
    if (option.correct) {
-   resultText.textContent = correctMessages[Math.floor(Math.random() * correctMessages.lenght)];
+   resultText.textContent = correctMessages[Math.floor(Math.random() * correctMessages.length)];
    resultText.style.color = 'green';
    button.style.backgroundColor = 'lightgreen';
 
    if (currentQuestionIndex < questions.length - 1) {
+      nextButton.textContent = "Nästa fråga";
       nextButton.style.display = 'block';
    } else {
-      resultText.textContent = "Spelet är slut, bra jobbat;";
+      resultText.textContent = "Spelet är slut, bra jobbat";
+      nextButton.textContent = "Spela igen";
+      nextButton.style.display = 'block';
    }
 } else {
-   resultText.textContent = wrongMessages[Math.floor(Math.random() * wrongMessages.lenght)];
+   resultText.textContent = wrongMessages[Math.floor(Math.random() * wrongMessages.length)];
    resultText.style.color = 'red';
    button.style.backgroundColor = '#ffcccc';
   }
@@ -73,8 +76,13 @@ optionsContainer.appendChild(button);
 }
 
 nextButton.addEventListener('click', () => {
+   if (currentQuestionIndex < questions.length -1) {
    currentQuestionIndex++;
    loadQuestion();
+} else {
+currentQuestionIndex = 0;
+loadQuestion();
+}
 });
 
 loadQuestion();
