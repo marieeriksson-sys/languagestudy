@@ -38,7 +38,7 @@ const resultText = document.getElementById('result');
 const nextButton = document.getElementById('next-btn');
 
 function loadQuestion() {
- const currentQuestion = questions[currentQuetionIndex];
+ const currentQuestion = questions[currentQuestionIndex];
 
  ImageElement.src = currentQuestion.image;
 
@@ -48,16 +48,16 @@ nextButton.style.display = 'none';
 
 currentQuestion.options.forEach(option => {
    const button = document.createElement('button');
-   button.tektContent = option.text;
+   button.textContent = option.text;
    button.classList.add('option');
 
-   button.addEventListnener('click', () => {
+   button.addEventListener('click', () => {
    if (option.correct) {
    resultText.textContent = correctMessages[Math.floor(Math.random() * correctMessages.lenght)];
    resultText.style.color = 'green';
    button.style.backgroundColor = 'lightgreen';
 
-   if (currentQuestionIndex < questions.lenght - 1) {
+   if (currentQuestionIndex < questions.length - 1) {
       nextButton.style.display = 'block';
    } else {
       resultText.textContent = "Spelet är slut, bra jobbat;";
@@ -72,7 +72,7 @@ optionsContainer.appendChild(button);
   });
 }
 
-nextButton.addEventListner('click', () => {
+nextButton.addEventListener('click', () => {
    currentQuestionIndex++;
    loadQuestion();
 });
