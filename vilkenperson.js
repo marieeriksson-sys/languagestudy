@@ -34,28 +34,47 @@ const wrongMessages =["Fel", "Försök igen", "Nästan"];
 
 const ImageElement = document.getElementById('game-img');
 const optionsContainer = document.getElementById('options');
-const resulttext = document.getElementById('result');
+const resultText = document.getElementById('result');
 const nextButton = document.getElementById('next-btn');
 
 function loadQuestion() {
- constcurrent
+ const currentQuestion = questions[currentQuetionIndex];
+
+ ImageElement.src = currentQuestion.image;
+
+optionsContainer.innerHTML = '';
+resultText.textContent = '';
+nextButton.style.display = 'none';
+
+currentQuestion.options.forEach(option => {
+   const button = document.createElement('button');
+   button.tektContent = option.text;
+   button.classList.add('option');
+
+   button.addEventListnener('click', () => {
+   if (option.correct) {
+   resultText.textContent = correctMessages[Math.floor(Math.random() * correctMessages.lenght)];
+   resultText.style.color = 'green';
+   button.style.backgroundColor = 'lightgreen';
+
+   if (currentQuestionIndex < questions.lenght - 1) {
+      nextButton.style.display = 'block';
+   } else {
+      resultText.textContent = "Spelet är slut, bra jobbat;";
+   }
+} else {
+   resultText.textContent = wrongMessages[Math.floor(Math.random() * wrongMessages.lenght)];
+   resultText.style.color = 'red';
+   button.style.backgroundColor = '#ffcccc';
+  }
+});
+optionsContainer.appendChild(button);
+  });
 }
 
-options.forEach(button => {
-button.addEventListener('click', () => {
-const isCorrect = button.dataset.correct === 'true';
-options.forEach(btn => btn.style.backgroundColor = '');
-
-if (isCorrect) {
-const message = correctMessages[Math.floor(Math.random() * correctMessages.length)];
-result.textContent = message;
-result.style.color = 'green';
-button.style.backgroundColor = 'lightgreen';
-} else {
-const message = wrongMessages[Math.floor(Math.random() * wrongMessages.length)];
- result.textContent = message;
- result.style.color = 'red';
- button.style.backgroundColor = 'red';
-  }
- });
+nextButton.addEventListner('click', () => {
+   currentQuestionIndex++;
+   loadQuestion();
 });
+
+loadQuestion();
