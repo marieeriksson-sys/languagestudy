@@ -40,8 +40,7 @@ const nextButton = document.getElementById('next-btn');
 function loadQuestion() {
  const currentQuestion = questions[currentQuestionIndex];
 
- ImageElement.src = currentQuestion.image;
-
+ImageElement.src = currentQuestion.image;
 optionsContainer.innerHTML = '';
 resultText.textContent = '';
 nextButton.style.display = 'none';
@@ -57,14 +56,17 @@ currentQuestion.options.forEach(option => {
    resultText.style.color = 'green';
    button.style.backgroundColor = 'lightgreen';
 
-   if (currentQuestionIndex < questions.length - 1) {
-      nextButton.textContent = "Nästa fråga";
-      nextButton.style.display = 'block';
-   } else {
+   setTimeout(() => {
+     if (currentQuestionIndex < questions.length - 1) {
+      currentQuestionIndex++;
+      loadQuestion();
+     } else {
       resultText.textContent = "Spelet är slut, bra jobbat";
-      nextButton.textContent = "Spela igen";
+      nextButton.textContent = "Börja om";
       nextButton.style.display = 'block';
-   }
+     }
+   }, 1000);
+
 } else {
    resultText.textContent = wrongMessages[Math.floor(Math.random() * wrongMessages.length)];
    resultText.style.color = 'red';
@@ -74,15 +76,3 @@ currentQuestion.options.forEach(option => {
 optionsContainer.appendChild(button);
   });
 }
-
-nextButton.addEventListener('click', () => {
-   if (currentQuestionIndex < questions.length -1) {
-   currentQuestionIndex++;
-   loadQuestion();
-} else {
-currentQuestionIndex = 0;
-loadQuestion();
-}
-});
-
-loadQuestion();
