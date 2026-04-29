@@ -2,8 +2,8 @@ const questions = [
      {
         image: "lifestyle-people-emotions-casual-concept-confident-nice-smiling-asian-woman-cross-arms-chest-confident-ready-help-listening-coworkers-taking-part-conversation_1258-59335.avif",
         options: [
-        { text: "悲しい女性<", correct: false },
-            { text: "怒っている女性<", correct: false },
+        { text: "悲しい女性", correct: false },
+            { text: "怒っている女性", correct: false },
             { text:"幸せそうな女性", correct: true },
            { text: "眠そうな男", correct: false }
         ]
@@ -21,7 +21,7 @@ const questions = [
  image: "0_DwjQsFalovqGqeCI.jpg",
  options: [
   { text: "食べています", correct: false },
-  { text: "料理しています", correct: true },
+  { text: "料理をしています", correct: true },
   { text: "走っています", correct: false },
   { text: "勉強しています", correct: false } 
    ]
@@ -76,3 +76,10 @@ currentQuestion.options.forEach(option => {
 optionsContainer.appendChild(button);
   });
 }
+
+
+loadQuestion();
+nextButton.addEventListener('click', () => {
+   currentQuestionIndex = 0;
+   loadQuestion();
+})
