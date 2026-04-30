@@ -26,6 +26,15 @@ const questions = [
   { text: "勉強しています", correct: false } 
    ]
   },
+{
+ image:"pexels-photo-3771069.jpeg",
+ options: [
+   { text: "食べています", correct: false },
+   { text:"寝ています", correct: true },
+   { text: "走っています", correct: false },
+   { text: "勉強しています", correct: false }
+ ]
+}
 ];
 let currentQuestionIndex = 0;
 
@@ -36,6 +45,7 @@ const ImageElement = document.getElementById('game-img');
 const optionsContainer = document.getElementById('options');
 const resultText = document.getElementById('result');
 const nextButton = document.getElementById('next-btn');
+nextButton.classList.add('börjaom-btn');
 
 function loadQuestion() {
  const currentQuestion = questions[currentQuestionIndex];
@@ -51,10 +61,15 @@ currentQuestion.options.forEach(option => {
    button.classList.add('option');
 
    button.addEventListener('click', () => {
+   const allButtons = optionsContainer.querySelectorAll('.option');
+   allButtons.forEach(btn => {
+      btn.style.backgroundColor = '';
+   });
    if (option.correct) {
    resultText.textContent = correctMessages[Math.floor(Math.random() * correctMessages.length)];
    resultText.style.color = 'green';
    button.style.backgroundColor = 'lightgreen';
+   allButtons.forEach(btn => btn.style.pointerEvents = 'none');
 
    setTimeout(() => {
      if (currentQuestionIndex < questions.length - 1) {

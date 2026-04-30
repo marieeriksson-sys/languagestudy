@@ -84,7 +84,25 @@ cursor: pointer;
 border-radius: 5px;
 background: transparent;
 backdrop-filter: blur(20px);
-border:2px solid rgb(0, 0, 0);
+border:1px solid rgb(0, 0, 0);
+}
+.börjaom-btn{
+ width: 200px;
+ align-items: center;
+ margin:auto;
+ padding:10px 15px;
+ display: block;
+ font-size: 10px;
+ cursor: pointer;
+ border-radius: 5px;
+ background: transparent;
+ backdrop-filter: blur(20px);
+ border: 1px solid black;
+}
+.börjaom-btn:hover{
+padding: 10px;
+overflow: hidden;
+background-color: rgb(188, 219, 246);
 }
 .game {
 background: rgb(255, 255, 255);
@@ -101,7 +119,9 @@ margin:10px;
 justify-content:right;
 }
 button.option:hover {
-    background: rgb(192, 251, 255);
+  padding: 10px;
+  overflow: hidden;
+  background: rgb(188, 219, 246);
 }
 #result {
     font-size: 25px;

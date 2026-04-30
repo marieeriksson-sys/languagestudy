@@ -1,7 +1,8 @@
 body{
-    background-image: url(englandbackground.jpg);
+    background-image: url(istockphoto-532412092-612x612.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: cover;
     }
     html, body{
     margin:0;
@@ -34,11 +35,12 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-bottom: none;
     text-align: center;
+    transition: all 0.3s ease-in-out;
     }
     .alternativ a:hover{
     border-radius: 10px;
     overflow:hidden;
-    background-color: rgb(13, 109, 21);
+    background-color: rgb(56, 151, 64);
     }
     .Hemnav{
         background: transparent;
@@ -81,12 +83,18 @@ body{
         padding: 10px;
         border-radius: 10px;
         overflow: hidden;
-        background-color: rgb(95, 2, 2);
+        background-color: rgb(56, 151, 64);
       }
     .nav-icon{
         width: 20px;
         height:auto;
         }
+.nav-iconalternativ{
+    width: 20px;
+    height:auto;
+    display:inline-block;
+    vertical-align: middle;
+    }
     .information
     {
         background: transparent;

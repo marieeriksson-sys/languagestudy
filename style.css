@@ -26,6 +26,9 @@ font-family: "Gorditas", serif;
 .merinfo{
   overflow: hidden;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+display: flex;
+text-align: center;
+margin:auto;
 }
 .information{
 font-family:Verdana, Geneva, Tahoma, sans-serif;
