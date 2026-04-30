@@ -20,6 +20,14 @@ $password = $_POST['password'];
 <!DOCTYPE html>
 <html lang="sv">
 <head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>hemsida</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&family=Updock&display=swap" rel="stylesheet">
 <style>
 .success {
     text-align: center;
@@ -27,6 +35,7 @@ $password = $_POST['password'];
 }
 input {
 width: 200px;
+text-align: center;
 align-items: center;
 margin:auto;
 padding:10px 15px;
@@ -39,13 +48,6 @@ backdrop-filter: blur(20px);
 border: 1px solid black;
 }
 </style>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>hemsida</title>
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&family=Updock&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class= "startbild">
