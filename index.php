@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -20,6 +20,21 @@ $password = $_POST['password'];
 <!DOCTYPE html>
 <html lang="sv">
 <head>
+<style>
+.form{
+width: 200px;
+align-items: center;
+margin:auto;
+padding:10px 15px;
+display: block;
+font-size: 10px;
+cursor: pointer;
+border-radius: 5px;
+background: transparent;
+backdrop-filter: blur(20px);
+border: 1px solid black;
+}
+</style>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>hemsida</title>
