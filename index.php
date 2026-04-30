@@ -1,15 +1,19 @@
 <?php
+
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 $conn = new mysqli("localhost" , "Marie" , "4653Zs7U" , "databas" );
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-$titel = $_POST["titel"];
-$beskrivning = $_POST["beskrivning"];
- $sql = "INSERT INTO tabell (title, description) VALUES ('$title', '$beskrivning')";
- $conn->query($sql);
-  }
-
+$email = $_POST['email'];
+$password = $_POST['password'];
+ $sql = "INSERT INTO users (email, password) VALUES ('$email', '$password')";
+ if ($conn->query($sql) === TRUE) {
+    echo "Användaren har sparats";
+ } else {
+   echo "Fel: " . $conn->error;
+   }
+}
 ?>
 
 
@@ -38,10 +42,9 @@ $beskrivning = $_POST["beskrivning"];
     <li><a href="Franska.html" class="Franska-länk">Franska <img src="food.png" class="nav-icon"></a></li>
 </ul>
 <form method="POST">
-    Titel: <input type="text" name="titel" required><br><br>
-    Beskrivning:<br>
-    <textarea name="beskrivning" rows="5" cols="40"></textarea><br><br>
-    <input type="submit" value="Skicka">
+    E-post: <input type="email" name="email" required><br><br>
+    Lössenord: <input type="password" name="password" required><br><br>
+    <input type="submit" value="Skapa konto">
 </form> 
 <h1 class="varför">Varför ska du använda vår webbsida för att lära dig språk?</h1>
 <p class="merinfo">Vår webbsida använder spel genom att lära sig språk. När du har kul när du lär dig so producerar din hjärna mer dopamin som ökar fokusetet, motivationen och högre retention (förmåga att komma ihåg över tid).  </p>
