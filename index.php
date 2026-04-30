@@ -9,7 +9,7 @@ $email = $_POST['email'];
 $password = $_POST['password'];
  $sql = "INSERT INTO users (email, password) VALUES ('$email', '$password')";
  if ($conn->query($sql) === TRUE) {
-    echo "Användaren har sparats";
+    echo "<div class='success'>Användaren har sparats</div>";
  } else {
    echo "Fel: " . $conn->error;
    }
@@ -21,6 +21,10 @@ $password = $_POST['password'];
 <html lang="sv">
 <head>
 <style>
+.success {
+    text-align: center;
+    padding: 10px;
+}
 input {
 width: 200px;
 align-items: center;
