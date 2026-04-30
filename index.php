@@ -21,7 +21,7 @@ $password = $_POST['password'];
 <html lang="sv">
 <head>
 <style>
-.input {
+input {
 width: 200px;
 align-items: center;
 margin:auto;
