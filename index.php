@@ -37,6 +37,22 @@ form {
 text-align: center;
 margin-top:20px;
 }
+input[type="password"],
+input[type="email"]
+{
+width: 200px;
+text-align: center;
+align-items: center;
+margin:auto;
+padding:10px 15px;
+display: block;
+font-size: 10px;
+cursor: pointer;
+border-radius: 5px;
+background: transparent;
+backdrop-filter: blur(20px);
+border: 1px solid black;
+}
 input[type="submit"] {
 width: 200px;
 text-align: center;
