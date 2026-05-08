@@ -33,6 +33,10 @@ $password = $_POST['password'];
     text-align: center;
     padding: 10px;
 }
+form {
+text-align: center;
+margin-top:20px;
+}
 input {
 width: 200px;
 text-align: center;
@@ -46,10 +50,6 @@ border-radius: 5px;
 background: transparent;
 backdrop-filter: blur(20px);
 border: 1px solid black;
-}
-form {
-text-align: center;
-margin-top:20px;
 }
 </style>
 </head>
