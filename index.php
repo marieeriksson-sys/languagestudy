@@ -37,7 +37,7 @@ form {
 text-align: center;
 margin-top:20px;
 }
-input {
+input[type="submit"] {
 width: 200px;
 text-align: center;
 align-items: center;
