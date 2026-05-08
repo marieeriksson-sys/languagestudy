@@ -47,6 +47,10 @@ background: transparent;
 backdrop-filter: blur(20px);
 border: 1px solid black;
 }
+form {
+text-align: center;
+margin-top:20px;
+}
 </style>
 </head>
 <body>
